@@ -4,8 +4,8 @@
 <div class="container">
     <p>Przeczytane książki: {{readBooks.length}}</p>
     <ul>
-      <li appChecked sortByAuthor *ngFor="let book of readBooks">
-        {{book.authorName }}, {{book.authorSurname}}, {{book.title}}
+      <li *ngFor="let book of readBooks">
+        {{book.authorName }} {{book.authorSurname}}, <i>{{book.title}}</i>
       </li>
     </ul>
     </div>

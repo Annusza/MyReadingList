@@ -14,6 +14,7 @@ export class ReadBooksComponent implements OnInit {
   constructor(private bookService: BookService) {
     this.bookService.getReadBooksObs().subscribe((books: Array<Book>) => {
       this.readBooks = books.filter(t => t.isRead === true);
+      this.readBooks = books;
     });
   }
 

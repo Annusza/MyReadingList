@@ -3,19 +3,25 @@
 </h1>
 
 <div>
-  <div class="container"> <!-- Dodawanie książek -->
+  <div class="container">
 
     <app-addbook></app-addbook>
   </div>
+  <br>
 
-  <div class="container"> <!-- Wyświetlanie listy lektur oraz dodawanie/usuwanie książek -->
+  <!-- <div class="container">
     <div>
       <app-unreadbooks></app-unreadbooks>
     </div>
-
-    <div class="container"> <!-- Przeczytane książki -->
+    <div class="container">
       <app-readbooks></app-readbooks>
     </div>
   </div>
+</div> -->
+  <a class="nav-link" routerLink="unreadBooks" routerLinkActive="active">Książki do przeczytania:</a><br>
+  <router-outlet></router-outlet>
+  <a class="nav-link" routerLink="readBooks" routerLinkActive="active">Przeczytane</a>
 
-</div>
+
+
+

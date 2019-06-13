@@ -8,9 +8,12 @@ import { AddBookComponent } from './addBook/addBook.component';
 import { UnreadBooksComponent } from './unreadBooks/unreadBooks.component';
 import { ReadBooksComponent } from './readBooks/readBooks.component';
 import { CheckedDirective } from './shared/checked.directive';
-// import { DateDirective } from './shared/date.directive';
-// import { BookTransformPipe } from './shared/bookTransform.pipe';
 import { SortByAuthorPipe } from './shared/sortByAuthor.pipe';
+//
+import {HttpClientModule} from '@angular/common/http';
+import { HttpService } from './services/http.service';
+import { AppRoutingModule } from './app.routing.module';
+
 
 @NgModule({
   declarations: [
@@ -19,16 +22,16 @@ import { SortByAuthorPipe } from './shared/sortByAuthor.pipe';
     UnreadBooksComponent,
     ReadBooksComponent,
     CheckedDirective,
-    // DateDirective,
-    // BookTransformPipe,
     SortByAuthorPipe
   ],
 
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    AppRoutingModule
   ],
-  providers: [BookService],
+  providers: [BookService, HttpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
