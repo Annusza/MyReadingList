@@ -3,7 +3,7 @@
 <ng-container *ngIf="unreadBooks.length > 0; else noBook">
   <p [ngStyle]="{color: getColor()}">Pozostało do przeczytania: {{unreadBooks.length}}</p>
     <ul>
-       <li  *ngFor="let book of unreadBooks | sortByAuthor ; let odd = odd" [ngClass]="{'odd-li': odd, 'last-li': unreadBooks.lenght===1 }">
+       <li  class="list" *ngFor="let book of unreadBooks | sortByAuthor ; let odd = odd" [ngClass]="{'odd-li': odd, 'last-li': unreadBooks.lenght===1 }">
           {{book.authorName}} {{book.authorSurname}}, <i>{{book.title}} </i>
          <button type="button" class="btn btn-danger" (click)="remove(book)">Usuń</button>
         <button type="button" class="btn btn-success" (click)="readed(book)">Przeczytane</button>

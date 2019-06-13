@@ -34,7 +34,7 @@ export class UnreadBooksComponent implements OnInit {
   }
 
   getColor(): string {
-    return this.unreadBooks.length >= 5 ? 'red' : 'green';
+    return this.unreadBooks.length >= 3 ? 'blue' : 'green';
   }
 
 }

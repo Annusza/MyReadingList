@@ -4,7 +4,7 @@
 <div class="container">
     <p>Przeczytane książki: {{readBooks.length}}</p>
     <ul>
-      <li *ngFor="let book of readBooks">
+      <li class="list" *ngFor="let book of readBooks">
         {{book.authorName }} {{book.authorSurname}}, <i>{{book.title}}</i>
       </li>
     </ul>

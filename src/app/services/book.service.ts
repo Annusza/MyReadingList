@@ -8,7 +8,6 @@ export class BookService {
     throw new Error('Method not implemented.');
   }
 
-
   // tslint:disable-next-line:member-ordering
   private unreadBooks: Array<Book> = [];
   // tslint:disable-next-line:member-ordering
