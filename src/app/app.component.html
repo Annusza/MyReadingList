@@ -1,0 +1,21 @@
+<h1 style="text-align:center">
+  {{ title }}
+</h1>
+
+<div>
+  <div class="container"> <!-- Dodawanie książek -->
+
+    <app-addbook></app-addbook>
+  </div>
+
+  <div class="container"> <!-- Wyświetlanie listy lektur oraz dodawanie/usuwanie książek -->
+    <div>
+      <app-unreadbooks></app-unreadbooks>
+    </div>
+
+    <div class="container"> <!-- Przeczytane książki -->
+      <app-readbooks></app-readbooks>
+    </div>
+  </div>
+
+</div>

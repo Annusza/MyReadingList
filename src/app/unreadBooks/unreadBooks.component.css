@@ -1,0 +1,15 @@
+
+li {
+  background: whitesmoke;
+  margin: 5px;
+}
+
+.odd-li {
+  background: whitesmoke;
+  margin: 5px;
+}
+
+.last-li {
+  background: lightgoldenrodyellow;
+  margin: 5px;
+}
